@@ -4,14 +4,15 @@ body {
     font-family: Arial, sans-serif;
     width: 100%;
     height: 100vh;
+    background: rgb(255, 255, 255)
 }
 
 nav {
     width: 100%;
     padding: 2rem;
     color: rgb(255, 255, 255);
-    background: linear-gradient(rgb(31, 64, 90), rgb(31, 64, 90));
-    top: 0;    
+    background: rgba(31, 64, 90);
+    top: 0;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -21,6 +22,7 @@ header {
     display: flex;
     align-items: center;
 }
+
 ul {
     margin: 0%;
     padding: 0%;
@@ -89,7 +91,7 @@ section {
     color: white;
 }
 
-.servicos h3{
+.servicos h3 {
     font-weight: 200;
 }
 
@@ -99,8 +101,8 @@ section {
     border-radius: 10px;
     color: white;
     font-weight: 200;
-    box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.5);
-
+    margin: 0;
+    padding: 0.5rem;
 }
 
 .servicos div:hover {
@@ -109,7 +111,8 @@ section {
     cursor: pointer;
     color: black;
     transition: .5s;
-    padding: 0.7rem;
+    margin: 0;
+    padding: 0.5rem;
 }
 
 .formulario {
@@ -156,6 +159,131 @@ footer {
     background-color: black;
     color: white;
     background: linear-gradient(rgb(31, 64, 90), rgb(31, 64, 90));
+}
+
+.containerDepoimentos {
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.containerDepoimentos h2 {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.containerDepoimentos h4 h5 {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    height: auto;
+}
+
+div.depoimento {
+    display: flex;
+    width: 80%;
+    height: auto;
+    flex-direction: column;
+    background-color: rgb(31, 64, 90);
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+div p {
+    display: flex;
+    width: 80%;
+    height: auto;
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+}
+
+.interacao {
+    display: flex;
+    width: auto;
+    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.interacao button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: rgb(31, 64, 90);
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.interacao button:hover {
+    background-color: transparent;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    color: white;
+    transition: .5s;
+}
+
+div.comentar {
+    display: flex;
+    width: 80%;
+    height: auto;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+div .tituloComentario {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+div textarea {
+    display: flex;
+    width: 80%;
+    height: auto;
+    padding: 0.5rem;
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+}
+
+div input {
+    background-color: transparent;
+    border: solid 1px rgb(0, 0, 0);
+    color: white;
+}
+
+div button {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+div button:hover {
+    background-color: black;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    transition: .5s;
+    color: rgb(255, 255, 255);
+}
+
+.containerDepoimentos p {
+    width: 60%;
+    height: auto;
 }
 
 @media (max-width: 768px) {
