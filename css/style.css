@@ -70,6 +70,13 @@ main {
     gap: 2rem;
 }
 
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: ;
+}
+
 section {
     display: flex;
     flex-direction: column;
